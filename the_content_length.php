@@ -1,7 +1,7 @@
 <?php
 	// Adjust the length of the WordPress content you would like to show
 	// the_content_length(360, "...");
-	function the_content_length($length, $trail) {
+	function the_content_length($length, $trail = false) {
 		$theContent = apply_filters("the_content", get_the_content());
 		$theContent = str_replace("]]>", "]]&gt;", $theContent);
 		
